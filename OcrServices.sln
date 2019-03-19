@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcrServices", "OcrServices\OcrServices.csproj", "{8B7B5283-5799-455E-BEA8-83042040DF7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{E6FC8B59-00CC-49BB-8B24-5FB0EB52C3C8}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\IOFile.dll = Lib\IOFile.dll
+		Lib\System.Framework.Aop.dll = Lib\System.Framework.Aop.dll
+		Lib\System.Framework.Common.dll = Lib\System.Framework.Common.dll
+		Lib\System.Framework.DataAccess.dll = Lib\System.Framework.DataAccess.dll
+		Lib\System.Framework.Logging.dll = Lib\System.Framework.Logging.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B7B5283-5799-455E-BEA8-83042040DF7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7B5283-5799-455E-BEA8-83042040DF7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7B5283-5799-455E-BEA8-83042040DF7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7B5283-5799-455E-BEA8-83042040DF7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B91F30FF-53D0-4038-99DA-016B6661A660}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+﻿[
+  {
+    "ServiceName": "Cloud",
+    "SourceServerIp": "YnDev",
+    "NLogName": ".影像定义",
+    "RpcUrl": "http://192.168.102.20:8888",
+    "ConnectionStringDictionary": {
+      "Default": "Data Source=43.254.47.10,41433;Initial Catalog=TPA_PROD;UID=YNTESTIR;password=YNTESTIR123;Pooling=true;Max Pool Size=32767;Min Pool Size=0;"
+    },
+    "CloudConfig": {
+      "AppId": 10011668,
+      "SecretId": "AKIDgPUCM8JJaUok88LlpTqRruKmA7YZGIMq",
+      "SecretKey": "yFVFSPMhsh3wkE2RO97WPo1RSfOEsXfD",
+      "BucketName": "pic2yndev"
+    },
+    "TargetServerPath": "\\\\192.168.102.20\\share\\YXDY",
+    "MaxDegreeOfParallelism": 8,
+    "SendMillisecondsTimeout": 10000,
+    "CallDataBaseServiceName": "Define"
+  }
+]

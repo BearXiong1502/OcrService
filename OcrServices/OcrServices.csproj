@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B7B5283-5799-455E-BEA8-83042040DF7F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OcrServices</RootNamespace>
+    <AssemblyName>OcrServices</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>OcrServices.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.3.1\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Configuration, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutofacOfConfiguration.3.3.0\lib\net40\Autofac.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="BusinessLogicRepository">
+      <HintPath>..\Lib\BusinessLogicRepository.dll</HintPath>
+    </Reference>
+    <Reference Include="CookComputing.XmlRpcV2, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a7d6e17aa302004d, processorArchitecture=MSIL">
+      <HintPath>..\packages\xmlrpcnet.3.0.0.266\lib\net20\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper.Microsoft.Sql, Version=0.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.Microsoft.Sql.0.0.5\lib\Dapper.Microsoft.Sql.dll</HintPath>
+    </Reference>
+    <Reference Include="IOFile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\IOFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Security">
+      <HintPath>..\Lib\Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Framework.Aop">
+      <HintPath>..\Lib\System.Framework.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Framework.Common">
+      <HintPath>..\Lib\System.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Framework.DataAccess">
+      <HintPath>..\Lib\System.Framework.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Framework.Logging">
+      <HintPath>..\Lib\System.Framework.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Web">
+      <HintPath>..\Lib\Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Containers.cs" />
+    <Compile Include="DataAccess\DataAccess.cs" />
+    <Compile Include="DataAccess\IDataInterface.cs" />
+    <Compile Include="Entites\BearTest.cs" />
+    <Compile Include="Entites\Define\SPEH_CLIM_CLM_IMAGE_FIRST_SEND_LIST_OCR.cs" />
+    <Compile Include="Entites\Define\SPEH_CLIM_CLM_IMIM_PRE_SECOND_DEFINE_OCR.cs" />
+    <Compile Include="Entites\Define\SPEH_CLIM_CLM_IMIM_STTS_UPDATE_OCR.cs" />
+    <Compile Include="Entites\Define\TableType\IMIM_INFO_INSERT.cs" />
+    <Compile Include="Entites\Define\TableType\IMIM_STTS_UPDATE.cs" />
+    <Compile Include="Entites\HpList\SPEH_CLID_CLM_IMAGE_DETAIL_SEND_LIST_OCR.cs" />
+    <Compile Include="Entites\HpList\SPEH_IMDI_IMAGE_DETAIL_INFO_SENT_STS_UPDATE_OCR.cs" />
+    <Compile Include="Entites\HpList\SPIN_CLSL_INSERT_OCR.cs" />
+    <Compile Include="Entites\HpList\TableType\KY_LIST.cs" />
+    <Compile Include="Entites\HpList\TableType\USDF_CLSL_INFO_OCR.cs" />
+    <Compile Include="Entites\IvInput\SPIN_CLIV_INSERT_OCR.cs" />
+    <Compile Include="Entites\IvInput\SPEH_CLIM_CLM_IMAGE_SECOND_SEND_LIST_OCR.cs" />
+    <Compile Include="Entites\IvInput\SPEH_IMAGE_SECOND_SEND_STS_UPDATE_OCR.cs" />
+    <Compile Include="Entites\IvInput\TableType\KY_LIST.cs" />
+    <Compile Include="Entites\IvInput\TableType\USDF_CLSV_PRJ_INFO_OCR.cs" />
+    <Compile Include="Entites\IvInput\TableType\USDF_CLSV_SPSP_INFO_OCR.cs" />
+    <Compile Include="IDownload.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AppConfigs\autofac-DownloadComponent.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AppConfigs\CB.Prd.DownloadConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="AppConfigs\Uat.DownloadConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="AppConfigs\Prd.DownloadConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="AppConfigs\Dev.DownloadConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="AppConfigs\ZA.Prd.DownloadConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
